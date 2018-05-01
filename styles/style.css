@@ -1,0 +1,106 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    'header vis1 vis2'
+    'vis3 vis3 vis3';
+  grid-gap: 10px;
+  padding: 25px;
+  margin-top: 20px;
+}
+.container > div {
+  text-align: center;
+  font-size: 25px;
+}
+.container h1, h2, h3, h4, h5, h6 {
+	font-family: sans-serif;
+	text-align: center;
+}
+.container h1 {
+	text-align: center;
+	font-size: 1em;
+	line-height: 1em;
+}
+.container h6 {
+	font-size: 0.6em;
+	line-height: 0em;
+}
+
+#header { grid-area: header; }
+#vis1 { grid-area: vis1; }
+#vis2 { grid-area: vis2; 
+	padding-right: 35px;}
+#vis3{ grid-area: vis3; }
+
+.item {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 11px;
+	font-weight: 300;
+	fill: #242424;
+	text-align: center;
+	text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+	cursor: default;
+}
+
+.arc text {
+  font: 10px sans-serif;
+}
+
+polyline{
+	opacity: .3;
+	stroke: black;
+	stroke-width: 2px;
+	fill: none;
+}
+
+.tooltip {        
+	background: #eee;                      
+	box-shadow: 0 0 5px #999999;          
+	color: #333;                                  
+	display: none;                          
+	font-size: 12px;                                
+	left: 130px;                                   
+	padding: 10px;                        
+	position: absolute;                    
+	text-align: center;                          
+	top: 95px;                     
+	width: 80px;                      
+	z-index: 10;                       
+}                                            
+.legend {
+	font-family: 'Raleway', sans-serif;
+	font-size: 10px;
+}
+rect {
+	cursor: pointer;  
+	stroke-width: 2;
+}
+
+.background path {
+  fill: none;
+  stroke: #ddd;
+  shape-rendering: crispEdges;
+}
+
+.foreground path {
+  fill: none;
+  stroke: steelblue;
+}
+
+.brush .extent {
+  fill-opacity: .3;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+.axis line,
+.axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+  opacity: 0.10;
+}
+
+.axis text {
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+  font-size: 11px;
+}
