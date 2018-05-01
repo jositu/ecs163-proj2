@@ -58,13 +58,13 @@ function ParallelSets(container, data, initialLevel) {
         }));
 
         // add grey background lines for context (all data)
-        var background = svg.append("g")
-            .attr("class", "background")
-            .selectAll("path")
-            .data(data)
-            .enter()
-            .append("path")
-            .attr("d", path);
+        // var background = svg.append("g")
+        //     .attr("class", "background")
+        //     .selectAll("path")
+        //     .data(data)
+        //     .enter()
+        //     .append("path")
+        //     .attr("d", path);
 
         // add blue foreground lines for selection (filtered data)
         var foreground = svg.append("g")
